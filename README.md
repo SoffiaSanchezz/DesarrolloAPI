@@ -39,8 +39,8 @@ xxxxxxxxxx
 
 The tools that were used to create this project are:
 
-### Backend
-- [Mongo Atlas] - Used to store the information of the database.
+### Backend 📉
+- (Mongo Atlas) - Used to store the information of the database.
 - Express
 - Node
  
