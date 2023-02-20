@@ -1,8 +1,8 @@
-const DB = require("./db.json");
+// const DB = require("./db.json");
 const { saveToDataBase } = require("./utils");
 const DBMongo = require("../models/modelGame.js"); // Brings the database model for artist
 
-const getAllGames = () => {
+const getAllGame = () => {
     return DBMongo.games;
 }
 
@@ -59,4 +59,4 @@ const deleteOneGame = (gameId) => {
     saveToDataBase(DBMongo);
 }
 
-module.exports = { getAllGames, getOneGame, createNewGame, updateOneGame, deleteOneGame };
+module.exports = { getAllGame, getOneGame, createNewGame, updateOneGame, deleteOneGame };

@@ -3,7 +3,7 @@ const express = require("express");
 // Coneccion del mongo
 const v1GameRouter = require("./v1/routes/gameRoutes");
 const bodyParser = require("body-parser");
-require("dotenv").config();
+// require("dotenv").config();
 
 // Este es el conector de mongo
 const mongoose = require("mongoose"); 
@@ -25,10 +25,10 @@ app.use(cors());
 
 
 //ruta para que aparesca en el navegador
-app.use("/api/v1/Game", v1GameRouter);
+app.use("/game", v1GameRouter);
 
 //LocalHost de mongo 
-mongoose.connect("mongodb://127.0.0.1:", conecctionOptions)
+mongoose.connect("mongodb+srv://SofiaSanchez:SofiaSanchez123@cluster0.umtvfll.mongodb.net/test", conecctionOptions)
     .then(() => console.log("The conection is OK"))
     .catch((err) => console.log(err));
 

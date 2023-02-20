@@ -1,9 +1,9 @@
 const {v4: uuid} = require("uuid");
 const Game = require("../models/modelGame");
 
-const getAllGames = () => {
-    const allGames = Game.getAllGames();
-    return allGames;
+const getAllGame = () => {
+    const allGame = Game.getAllGame();
+    return allGame;
 }
 
 const getOneGame = (gameId) => {
@@ -30,7 +30,7 @@ const deleteOneGame = (gameId) => {
 }
 
 module.exports = {
-    getAllGames,
+    getAllGame,
     getOneGame,
     createNewGame,
     updateOneGame,

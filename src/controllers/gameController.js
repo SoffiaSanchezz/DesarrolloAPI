@@ -1,5 +1,5 @@
 const gameServices = require("../services/gameServices");
-const Game = require("../models/modelGame.js")
+const Game = require("../models/modelGame")
 
 // This let view all documents in a collection from mongo compass
 const getAllGame = (req, res) => {
