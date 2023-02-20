@@ -47,7 +47,7 @@ The tools that were used to create this project are:
  ### Extensions 💥
  - Cors
  - Mongoose
- -Nodemon
+ - Nodemon
 
  Extensions within the programming tool
 
